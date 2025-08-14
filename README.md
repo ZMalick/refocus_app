@@ -1,16 +1,20 @@
-# refocus_app
+# Re-Focus: Screen Time Management App
 
-A new Flutter project.
+## Description
+Re-Focus is a Flutter mobile application designed to help users monitor and manage their daily screen time. It tracks individual app usage, allows users to set daily time and open limits, and provides visual feedback through dynamic charts and progress indicators.
 
-## Getting Started
+## Features
+- Track total daily screen time and individual app usage.
+- Set custom daily limits for app usage (time and opens).
+- Dynamic visualizations:
+  - Pie charts showing top 5 most-used apps.
+  - Linear progress bar for daily screen time.
+- Persistent data storage using SharedPreferences.
+- Onboarding flow to set your daily screen time goal.
 
-This project is a starting point for a Flutter application.
+## How it Works
+- Queries Android system usage stats via the `usage_stats` API.
+- Stores user-set goals and app limits using `SharedPreferences`.
+- Uses Provider for state management to share app usage data across screens.
+- Displays app usage with custom widgets (ProgressSection, PieChartSample3, AppUsageRow).
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
